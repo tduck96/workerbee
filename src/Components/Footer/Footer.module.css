@@ -1,0 +1,19 @@
+.container {
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.link {
+    margin: 1rem;
+}
+ a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    margin: 1rem;
+}
