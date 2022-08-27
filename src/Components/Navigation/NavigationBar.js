@@ -14,14 +14,17 @@ const NavigationBar = () => {
     <div>
       <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">WorkerBee</Navbar.Brand>
+        <LinkContainer to ='/'>
+        <Navbar.Brand href="/">WorkerBee</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
 
-            <LinkContainer to ='/home'>
-              <Nav.Link href='/home'>Home</Nav.Link>
-            </LinkContainer>
+              <LinkContainer to ='/'>
+              <Nav.Link href='/'>Home</Nav.Link>
+              </LinkContainer>
+          
       
             <LinkContainer to ='/users'>
               <Nav.Link href="/users">Find and Be Found</Nav.Link>

@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Context
 
-import { UserContext } from './Components/Context/UserContext';
+import { UserContext } from './Context/UserContext';
 
 
 function App() {
@@ -24,13 +24,13 @@ function App() {
    <Router>
     <NavigationBar />
     <Routes>
-      <Route to = '/home' element = {<Home />} />
-      <Route to = '/users' element = {<Users /> } />
-      <Route to = '/users/:id' element = {<User />} /> 
-      <Route to ='/getstarted' element = {<Register />} />
-      <Route to ='/login' element = {<Login />} />
+      <Route path = "/" element = {<Home />} />
+      <Route path = '/users' element = {<Users /> } />
+      <Route path = '/users/:id' element = {<User />} /> 
+      <Route path ='/getstarted' element = {<Register />} />
+      <Route path ='/login' element = {<Login />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
    </Router>
    </UserContext.Provider>
 

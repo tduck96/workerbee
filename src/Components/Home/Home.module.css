@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Header Section Styles */
+
+.headerSection {
+    box-sizing: border-box;
+    background-color: rgb(194, 189, 189);
+    width: 100%;
+}
+.wordContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 3rem;
+}
+h1 {
+    box-sizing: border-box;
+    font-size: 5rem;;
+}
+h3 {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.getStarted {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 187, 35);
+    padding: .5rem;
+    color: white;
+    width: 30%;
+    box-sizing: border-box;
+    border-radius: .3rem;  
+}
+.getStarted:hover {
+    background-color:rgb(45, 227, 45)
+}
+.getStarted a {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* Second Section Styledz */
+
+.userActionContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    
+}
+.ViewAllHeadline {
+    font-size: 2rem;
+}
+.viewAllButton {
+    box-sizing: border-box;
+    font-size: 1rem;
+    border: 1px solid blue;
+    padding: .5rem;
+    margin: 1rem;
+    margin-right: 2rem;
+}
+.viewAllButton a {
+    
+}
