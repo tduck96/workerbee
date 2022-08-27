@@ -10,7 +10,8 @@ import Register from './Components/Auth/Register';
 import Users from './Components/Users/Users';
 import User from './Components/Users/User';
 import Home from './Components/Home/Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import UserbyCategory from './Components/Users/UserbyCategory';
+
 
 // Context
 
@@ -26,9 +27,10 @@ function App() {
     <Routes>
       <Route path = "/" element = {<Home />} />
       <Route path = '/users' element = {<Users /> } />
+      <Route path = '/users/:category' element = {<UserbyCategory /> } />
       <Route path = '/users/:id' element = {<User />} /> 
-      <Route path ='/getstarted' element = {<Register />} />
       <Route path ='/login' element = {<Login />} />
+      <Route path ='/register' element = {<Register />} />
     </Routes>
     {/* <Footer /> */}
    </Router>

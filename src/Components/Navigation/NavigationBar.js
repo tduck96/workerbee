@@ -6,20 +6,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap'
-
+import styles from './NavigationBar.module.css'
 
 
 const NavigationBar = () => {
   return (
-    <div>
-      <Navbar bg="light" expand="lg">
+    
+      <Navbar bg="light" expand="lg" className = {styles.navContainer}>
       <Container>
         <LinkContainer to ='/'>
-        <Navbar.Brand href="/">WorkerBee</Navbar.Brand>
+        <Navbar.Brand href="/">WorkerBeez</Navbar.Brand>
         </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className = {styles.rightContainer}>
 
               <LinkContainer to ='/'>
               <Nav.Link href='/'>Home</Nav.Link>
@@ -54,7 +54,7 @@ const NavigationBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </div>
+    
   )
 }
 
